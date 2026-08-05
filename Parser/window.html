@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Parser</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      height: 85vh;
+    }
+
+    .pane {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      width: 100%;
+      flex-grow: 1;
+      padding: 12px;
+      font-family: monospace;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #htmlOutput {
+      width: 100%;
+      flex-grow: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fafafa;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Division 1: Input -->
+    <div class="pane">
+      <h3>Input HTML</h3>
+      <textarea id="htmlInput" placeholder="Type <h1>Hello World</h1> here..."></textarea>
+      <button id="renderBtn">Render HTML</button>
+    </div>
+
+    <!-- Division 2: Output -->
+    <div class="pane">
+      <h3>Output Preview</h3>
+      <div id="htmlOutput"></div>
+    </div>
+  </div>
+
+  <script>
+    // Wait until the HTML layout is completely loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      const htmlInput = document.getElementById('htmlInput');
+      const htmlOutput = document.getElementById('htmlOutput');
+      const renderBtn = document.getElementById('renderBtn');
+
+      renderBtn.addEventListener('click', () => {
+        const rawContent = htmlInput.value;
+
+        // Parse HTML string into DOM nodes
+        const parser = new DOMParser();
+        const parsedDoc = parser.parseFromString(rawContent, 'text/html');
+
+        // Clear previous output
+        htmlOutput.innerHTML = '';
+
+        // Append parsed nodes into the output div
+        Array.from(parsedDoc.body.childNodes).forEach(node => {
+          htmlOutput.appendChild(node.cloneNode(true));
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
