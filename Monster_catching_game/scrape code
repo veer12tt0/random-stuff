@@ -1,0 +1,7 @@
+Save_data = {
+    "name": plyr_info["name"],
+    "money": money,
+    "team": Active_Monsters,
+    "gym_won": Gym_won,
+    
+}
