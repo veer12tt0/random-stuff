@@ -16,7 +16,6 @@
 
 ### In list
 - Cities [Str]
-- Active party's monster [dict]
 
 ### In dictionary
 - Gym-won [bool]
@@ -26,6 +25,8 @@
 - Items available to be bought with a price list [str] [int]
 - All monsters core blueprint [dict]
 - Available monsters [dict]
+- Encounter moonster [dict] [temporary]
+- Active party's monster [dict]
 
 ### In JSON
 - Load data [int] [bool] [str]
@@ -34,16 +35,17 @@
 
 ## Functions
 
-- Encounters()
-- Location management()
-- Catch()
-- Save()
-- Load()
-- Command_based_control()
-- Economy()
-- Battle()
-- New()
-- Tutorial()
+- Encounters() []
+- Location management() []
+- Catch() []
+- Save() []
+- Load() []
+- Command_based_control() []
+- Economy() []
+- Battle() []
+- New() [x]
+- Tutorial() []
+- Info() []
 
 ## Color&style
 - RED     = "\033[31m"
