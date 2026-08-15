@@ -137,6 +137,6 @@ def map_management():
         choice = input(f"{GREEN}Write where to go {cities} > {RESET}").lower()
         if choice in cities :
             crnt_city = choice
-            print(f"{GREEN}travelling to {crnt_city}...{RESET}")
-        if choice not in cities :
-            print(f"{RED}You might not have written the cities where you can go{RESET}")
+            print(crnt_city)
+
+map_management()

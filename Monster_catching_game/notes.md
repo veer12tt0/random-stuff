@@ -44,7 +44,7 @@
 - Economy() []
 - Battle() []
 - New() [x]
-- Tutorial() []
+- Tutorial() [x]
 - Info() []
 
 ## Color&style
@@ -60,3 +60,13 @@
 ## control
 
 - **Input of Player [str]** 
+
+## Style mapping
+- Blue text and white bg for tutorial
+- Red text for false command
+- Green when buying/saving/loading
+- Bold for nouns
+- Italic for narrator
+- White bg with green text for info
+- Green for choice input
+- yellow for achievements <!-- only on exclaimation marks or symbols -->
