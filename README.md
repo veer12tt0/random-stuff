@@ -1,4 +1,4 @@
-# Random stuff
+# Random stuff ♾️
 
 ## Introduction
 Hello👋, I'm Veer. Currently I'm 16 years old and I have started making sites recently. For now I only have learnt how to make static sites and I'm onto learning node js and react too.
