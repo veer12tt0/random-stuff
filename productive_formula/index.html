@@ -5,24 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lightbulb" />
-    <title>Formula of productivity</title>
+    <title>Formula of Discipline</title>
 </head>
 <body>
     <div id="main">
 
-<header>
-    <nav>
-        <ul>
-            <li><span class="material-symbols-outlined">lightbulb</span></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Formula</a></li>
-            <li><a href="#">Footer</a></li>
-        </ul>
-    </nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><span class="material-symbols-outlined">lightbulb</span></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#formula">Formula</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
 
-    <h1 id="title"><span id="formula">Formula</span> <br> <span id="of">of</span> <br> <span id="productivity">Productivity</span></h1>
-</header>
+            <h1 id="title">
+                <span>Formula</span> <br>
+                <span>of</span> <br>
+                <span>Discipline</span>
+            </h1>
+        </header>
 
+        <main>
+            <h2 class="topic">Introduction</h2>
+            <p class="paragraph">
+                Shorts, games, and many other activities nowadays are very fast-paced.
+                This has made a huge impact on how we approach tasks and manage our time.
+                Humans, who once used to hunt, explore, and stay curious, have now become nothing more than lazy creatures.
+                The problem today isn't a lack of resources, but a lack of discipline.
+                People today are inconsistent and unserious about their goals.
+                They have lost the respect and credibility of their peers and elders, and constantly look for shortcuts.
+            </p>
+            <h3 class="topic">The Formula</h3>
+            <p class="paragraph">
+                Discipline plays a crucial role in achieving success. Nowadays one's discipline is measured by their consistency and patience.
+                So, to get to an answer of how much discipline one has, I have made a formula that takes all criteria and gives you a score of how much discipline you can expect you have. <br>
+            </p>
+            <div class="formula" id="formula">
+<p id="structure">
+    <math display="block">
+        <mo>{</mo>
+        <mo>[</mo>
+        <mo>(</mo>
+        <mfrac>
+            <mi mathvariant="normal">Points_of_work</mi>
+            <mn>2</mn>
+        </mfrac>
+        <mo>)</mo>
+        <mo>&times;</mo>
+        <mi mathvariant="normal">Points_of_Exercise</mi>
+        <mo>]</mo>
+        <mo>&minus;</mo>
+        <mi mathvariant="normal">Points_of_time_wasted</mi>
+        <mo>}</mo>
+    </math>
+</p>
+            </div>
+        <div id="application">
+            <p id="formula-result">{[(<span id="Points_of_work">0</span> / 2) * <span id="Points_of_Exercise">0</span>] - <span id="Points_of_time_wasted">0</span>} = <span id="Result">0</span></p>
+            <form>
+                <input type="number" id="work" placeholder="Points of work" class="form-control" required>
+                <input type="number" id="exercise" placeholder="Points of exercise" class="form-control" required>
+                <input type="number" id="time_wasted" placeholder="Points of time wasted" class="form-control" required>
+                <button type="button" onclick="calculateDiscipline()" class="form-control">Calculate Discipline</button>
+            </form>
+        </div>
+        <div id="conversion">
+            <h4>Here,</h4>
+            <p class="paragraph"><strong>Points_of_work:</strong> The number of points assigned to your work. (1 hour of work = 1 point)</p>
+            <p class="paragraph"><strong>Points_of_Exercise:</strong> The number of points assigned to your exercise. (20 minutes of exercise = 1 point)</p>
+            <p class="paragraph"><strong>Points_of_time_wasted:</strong> The number of points assigned to the time wasted. (5 minutes of time wasted = 1 point)</p>
+        </div>
+        <h3 class="topic">Philosophy of the Formula</h3>
+        <p class="paragraph">
+            Discipline is not only about learning to repeat  a task every day but to mantain a recursion of tasks that benefits you and your health.
+            The formula focuses on this by concluding your health along with the work youdo you think is important or beneficial ultimately leading to a better life. The formula is designed to be simple and easy to use, allowing anyone to assess their own discipline and make changes as necessary.
+            Wasting time is never a good thing and considering that i have intentionally made a point of time wasted to be equal to 5 minutes of time wasted. This is because wasting time is a habit that can be detrimental to one's discipline and overall well-being. By assigning a point value to wasted time, the formula encourages individuals to be more mindful of how they spend their time and to make better choices that will lead to improved discipline and productivity.
+        </p>
+        <h3 class="topic">Conclusion</h3>
+        <p class="paragraph">
+            The discipline formula is a simple yet effective way to gage your discipline. It takes into account the points of work, exercise and wasted time to give a score that reflects the level of discipline of the person. This formula allows people to assess their own discipline and make whatever changes are necessary to improve it.
+        </p>
     </div>
+        </main>
+        <footer style="background-color: black;" id="footer">
+            <div id="links">
+                <ul>
+                    <li><a href="#"><img src="icons/GitHub_Invertocat_White.svg" class="logo" alt="GitHub"><br>Github</a></li>
+                    <li><a href="#"><img src="icons/InBug-White.png" class="logo" alt="LinkedIn"><br>LinkedIn</a></li>
+                    <li><a href="#"><img src="icons/mail_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" class="logo" alt="mail"><br>Mail</a></li>
+                </ul>
+                </div>
+            <p class="exception" style="color: azure;">&copy; <script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p>
+        </footer>
+    </div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
