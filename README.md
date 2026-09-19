@@ -1,4 +1,11 @@
-<h1>Random Stuff</h1>
-<p>This repo is a <span class="underline"> log </span> of the basic programs I code which helps me learn the <span class="underline">logic and problem solving</span>.</p>
-<p class="underline">Everytime, I make a, I find something new which as a beginner makes the language more interesting and provoke curiosity to make more of such things</p>
-<style>
+# Random stuff
+
+## Introduction
+Hello👋, I'm Veer. Currently I'm 16 years old and I have started making sites recently. For now I only have learnt how to make static sites and I'm onto learning node js and react too.
+
+## Repo intro
+The reason why I made this Repo is that when I started applying what I had learnt, I didn't feel to work and it was obvious because I have not even started learning any backend language yet, but still I needed a place where I can try my *Random Ideas* so I found it better this way!
+I can practice my skills and keep a log of them here without any restrictions or feeling of isolation.
+
+###### I use this repo for some of my weird, curious and basic ideas and try a couple things.
+###### Besides the languages like HTML, CSS and JS, I also know python in which I have decided to learn libraries used in AI development and GD script.
