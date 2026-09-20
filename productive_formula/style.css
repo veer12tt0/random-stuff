@@ -1,120 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+/* Global reset + base font (applied to everything, so no need to repeat it later) */
+* {
     margin: 0;
     padding: 0;
-          font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
-::selection{
+::selection {
     background-color: #f30000;
     color: white;
 }
 
-body{
+body {
     background-color: #e3e3e3;
 }
 
-nav{
+/* ---------- Navigation ---------- */
+nav {
     border-bottom: 2px solid black;
     padding: 10px;
     margin-left: 2%;
     margin-right: 2%;
 }
 
-nav ul{
+nav ul {
     display: flex;
     column-gap: 45px;
-    justify-content:safe;
     flex-wrap: wrap;
     list-style-type: none;
-      font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-
 }
 
-nav ul li:not(:first-child):hover{
+nav ul li:not(:first-child):hover {
     transform: scale(1.2);
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
     border: 2px solid black;
 }
 
 @keyframes hoverAnimation_icon {
-    1%{
+    1% {
         transform: scale(1);
         color: #f30000;
-        border-bottom-color:#f30000;
-        border-left-color:#f30000;
+        border-bottom-color: #f30000;
+        border-left-color: #f30000;
     }
-    50%{
+    50% {
         transform: scale(1.2);
         color: #210aef;
-        border-right-color:#210aef;
-        border-top-color:#210aef;
+        border-right-color: #210aef;
+        border-top-color: #210aef;
     }
-    100%{
+    100% {
         transform: scale(1);
         color: #000000;
-        border-bottom-color:#000000;
-        border-left-color:#000000;
-        border-right-color:#000000;
-        border-top-color:#000000;
+        border-bottom-color: #000000;
+        border-left-color: #000000;
+        border-right-color: #000000;
+        border-top-color: #000000;
     }
 }
 
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
     animation: hoverAnimation_icon 0.5s ease-in-out;
 }
 
-#title{
-    font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+/* ---------- Title ---------- */
+#title {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 600%;
     overflow-wrap: break-word;
 }
 
-h1{
+h1 {
     border-bottom: 2px solid black;
     margin-left: 2%;
     margin-right: 2%;
 }
 
-.topic{
+.topic {
     border-bottom: 2px solid black;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     font-size: 250%;
 }
 
-main{
+/* ---------- Main content ---------- */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.paragraph{
+.paragraph {
     font-size: 150%;
     margin-left: 2%;
     margin-right: 2%;
@@ -122,32 +115,34 @@ main{
     color: #5b5d5d;
 }
 
-.formula{
+/* MathML formula box */
+.formula {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     border: 2px solid black;
     padding: 5%;
     margin-bottom: 20px;
 }
 
-mi{
+mi {
     color: #f30000;
     font-weight: bold;
     font-style: italic;
 }
 
-mn{
+mn {
     color: #210aef;
     font-weight: bold;
 }
 
-#application{
+/* Interactive calculator */
+#application {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: space-evenly;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
     border: 5px solid black;
     border-style: ridge;
     padding: 5%;
@@ -155,57 +150,57 @@ mn{
     transition: transform 0.5s ease-in-out;
 }
 
-#application:hover{
+#application:hover {
     transform: scale(1.05);
     border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
 }
 
-#formula-result{
+#formula-result {
     font-size: 200%;
     color: #5b5d5d;
     border-style: outset;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
-.form-control{
+.form-control {
     padding: 10px;
     font-size: 100%;
     border: 2px solid black;
     transition: all 0.3s ease-in-out;
 }
 
-.form-control:hover{
+.form-control:hover {
     outline: none;
     border-radius: 10px;
     border-color: #f30000;
 }
 
-button{
+button {
     padding: 10px;
     border: 4px solid black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-button:hover{
+button:hover {
     background-color: #f30000;
     color: white;
     border-color: #f30000;
 }
 
-#conversion{
+/* Legend explaining the formula's variables */
+#conversion {
     margin-left: 2%;
     margin-right: 2%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     border: 2px solid black;
     padding: 5%;
     margin-bottom: 20px;
@@ -214,54 +209,67 @@ button:hover{
     background-color: #f3f3f3;
 }
 
-h4{
+h4 {
     font-size: 200%;
     color: #5b5d5d;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
 }
 
-footer{
+/* ---------- Footer ---------- */
+footer {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px;
     color: #fafafa;
+    background-color: black;
     position: relative;
 }
 
-footer ul{
-    display:flex;
+/* Wrapper needs to span the full footer width, otherwise it shrinks
+   to fit its content and the ul below has no room left to center in */
+#links {
+    width: 100%;
+}
+
+/* Social/contact links: centered horizontally with clean, even spacing */
+footer ul {
+    display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    column-gap: 200px;
+    column-gap: 60px;
+    row-gap: 20px;
+    width: 100%;
     padding-bottom: 60px;
 }
 
-footer li{
+footer li {
     list-style-type: none;
     display: flex;
     gap: 5px;
 }
 
-footer li a{
+footer li a {
     text-decoration: none;
     color: #fafafa;
 }
 
-footer p:last-child{
+footer p:last-child {
     position: absolute;
     left: 10px;
     bottom: 1px;
 }
 
-.logo{
+.logo {
     height: 25px;
     width: 25px;
 }
 
-.exception{
+.exception {
     font-weight: bold;
     font-size: 80%;
+    color: azure;
 }
